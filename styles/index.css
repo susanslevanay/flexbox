@@ -56,6 +56,7 @@ body, html {
     margin-left: 30px;
 }
     .side-right .box:nth-child(1) {
+        min-height: 78px;
         display: flex;
         align-items: stretch;
         justify-content: center;
@@ -65,10 +66,10 @@ body, html {
         
     }
     .side-right .box:nth-child(1) .rectangle {
-        width: 78px;
-        min-height: 120px;
+        width: 120px;
+        min-height: 78px;
         background-color: #9D0208;
-       align-items: stretch;
+        align-items: stretch;
     }
     .square { 
         width: 78px;
