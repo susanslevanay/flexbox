@@ -1,4 +1,4 @@
-body, html {
+    body, html {
     background-color: #370617;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ body, html {
     flex-direction: column;
   }
   
-  .box {
+    .box {
     width: 468px;
     height: 160px;
     margin: 20px;
@@ -61,21 +61,54 @@ body, html {
         align-items: stretch;
         justify-content: center;
         flex-direction: row; 
-    
-        
         
     }
-    .side-right .box:nth-child(1) .rectangle {
+        .side-right .box:nth-child(1) .rectangle {
         width: 120px;
         min-height: 78px;
         background-color: #9D0208;
         align-items: stretch;
     }
-    .square { 
-        width: 78px;
-        height: 78px;
-        background-color:#9D0208;
-        margin: 5px;
+        .side-right .box:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+        .side-right .box:nth-child(2) .square {
+                width: 78px;
+                height: 78px;
+                background-color: #9D0208;
+                margin: 5px;
+            }
+            .side-right .box:nth-child(2) .square:nth-child(3) {
+                align-self: flex-end;
+            }
+            .side-right .box:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+           .side-right .box:last-child .rectangle {
+            width: 156px;
+            height: 78px;
+            background-color: #9D0208;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+           .side-right .box:last-child .square {
+            width: 78px;
+            height: 78px;
+            background-color: #9D0208; 
+            margin-left: 20px;
+
+           }
+            
+            .square { 
+               width: 78px;
+               min-height: 78px;
+               background-color:#9D0208;
+               margin: 5px;
     } 
    
   
